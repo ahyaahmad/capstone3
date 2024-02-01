@@ -113,3 +113,32 @@ Berdasarkan Feature Importance dan Summary Plot, 3 Faktor utama yang mempengaruh
   - Semakin besar nilai `Complain` semakin besar kemungkinan Customer akan Churn dan sebaliknya. nilai yang besar artinya customer melakukan complain atau customer tidak puas terhadap layanan.
 3. `NumberOfAddress`
   - Semakin besar nilai `NumberOfAddress` semakin besar kemungkinan Customer akan Churn dan sebaliknya. nilai yang besar artinya alamat yang didaftarkan semakin banyak. Hal ini dimungkinkan jika Customer tersebut berpindah alamat.
+
+Recommendation**
+
+**For Business:**
+
+Customer yang melakukan churn dapat menimbulkan kerugian bagi perusahaan. 
+1. perusahaan e-commerce perlu menyusun strategi agar dapat tetap menjaga kualitas produk dan pelayanan agar dapat menghindari complain yang masuk. 
+1. perusahaan e-commerce perlu menyusun strategi agar dapat menciptakan loyalitas pelanggan, baik dengan melakukan inovasi pada produk yang dipasarkan dan memberikan penawaran yang menarik, sehingga tenure customer semakin tinggi.
+1. perusahaan e-commerce perlu memahami Marketing Funnel. Marketing Funnel adalah sebuah konsep untuk menjelaskan tahapan yang dilalui oleh pelanggan sebelum akhirnya melakukan pembelian produk. Dengan mengetahui dan memahami Marketing Funnel, maka sebuah perusahaan akan lebih mudah untuk mengidentifikasi penyebab pelanggan membatalkan pembelian, sehingga dapat menyusun strategi untuk dapat mengatasinya.
+1. Perusahaan perlu menggunakan machine learning yang sudah dibuat, agar dapat mengurangi kerugian bagi perusahaan dengan memberikan promosi tepat sasaran kepada customer yang akan melakukan churn.
+1. Untuk prediksi customer selanjutnya dapat menggunakan WebApp yang sudah disediakan, guna memudahkan perusahaan dan dapat mendeteksi sedini mungkin kemungkinan customer churn.
+
+**For Model:**
+
+Akurasi model machine learning yang dibuat terbatas pada range feature:
+- Tenure: 0-61 bulan
+- Warehouse To Home: 5-127 km
+- Number of Device Registered: 1-6 devices
+- Number of Address: 1-22 address
+- Day since last order: 0-46 hari
+- Cashback Amount: 0-324.99 
+
+1. Mengumpulkan lebih banyak data khususnya pada minority class
+1. Menambahkan parameter lain dalam hyperparameter tuning
+1. Menambahkan ID customer untuk memastikan dan mengetahui data yang duplikat
+1. Menambahkan feature lain seperti lama pengiriman produk, ketepatan waktu pengiriman, dan lain-lain.
+1. Meminimalisir kesalahan penulisan data dan memastikan data yang diperoleh tidak ada yang kosong atau tidak terisi
+
+Dengan adanya rekomendasi diatas, diharapkan perusahaan e-commerce dapat menurunkan biaya marketing dan diharapkan dapat meningkatkan profit dengan adanya pelanggan loyal.
